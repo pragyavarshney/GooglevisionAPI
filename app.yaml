@@ -1,0 +1,4 @@
+runtime: nodejs10
+env: standard
+env_variables:
+  GCLOUD_STORAGE_BUCKET: my-project-image-258819.appspot.com

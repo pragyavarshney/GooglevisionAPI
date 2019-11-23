@@ -1,0 +1,60 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Express</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Image Express</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Upload Image</a></li>
+      <li><a href="/HowTo">How To</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>How To</h2>
+  <div class="lead">
+    <p>
+      Since the Google Cloud Vision library is readily available, where we just call a function to pass the image we want analyze. <br>
+      There were only 3 things that we needed to do to create the entire program:
+    </p>
+    <ul>
+      <li>Create the backend to invoke the Google Cloud Vision API and return the results to the user</li>
+      <li>Create the frontend for the user to be able to upload an image</li>
+      <li>A way to store the uploaded images to send to the Google Cloud Vision API</li>
+    </ul>
+    <h3>Creating the frontend</h3>
+    <p>
+      The frontend was the most straight forward part of the exercise. We used Bootstrap to quickly create a form that
+      will allow the user to upload the image they want to use. We also created the view as EJS as a way for us to
+      pass the results we get from the Express server onto the interface.<br>
+      We created a simple form action which is the following: <br>
+      <img src="./images/form.png" class="img-fluid" alt="Responsive image">
+    </p>
+
+    <h3>Creating the backend</h3>
+    <p>
+      To start creating the backend, we first have to get the Google Cloud Vision library loaded into our server.
+      We followed the instructions on how to download the library using the
+      <a href=" https://cloud.google.com/vision/docs/libraries#client-libraries-install-nodejs">Google Cloud documentation</a>
+    </p>
+
+  </div>
+</div>
+</body>
+</html>
+
+
